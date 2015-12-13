@@ -1,0 +1,31 @@
+---
+influxdb1:
+    boxname: puppetlabs/centos-7.0-64-puppet
+    cpus: 1
+    memory: 1024
+    puppet: apply
+    scripts:
+        - stop-firewalld.sh
+chronograf1:
+    boxname: puppetlabs/centos-7.0-64-puppet
+    cpus: 1
+    memory: 1024
+    ports:
+        - { host: 10000, guest: 10000 }
+    puppet: apply
+    scripts:
+        - stop-firewalld.sh
+kapacitor1:
+    boxname: puppetlabs/centos-7.0-64-puppet
+    cpus: 1
+    memory: 512
+    puppet: apply
+    scripts:
+        - stop-firewalld.sh
+client1:
+    boxname: puppetlabs/centos-7.0-64-puppet
+    cpus: 1
+    memory: 512
+    puppet: apply
+    scripts:
+        - stop-firewalld.sh

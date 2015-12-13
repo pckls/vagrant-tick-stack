@@ -1,0 +1,5 @@
+---
+classes:
+    - influxdb
+
+influxdb::package_source: web
