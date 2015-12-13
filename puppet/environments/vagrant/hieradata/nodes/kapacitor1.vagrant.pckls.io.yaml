@@ -1,0 +1,5 @@
+---
+classes:
+    - kapacitor
+
+kapacitor::package_source: web

@@ -1,0 +1,8 @@
+# Puppetlabs Modules
+mod 'stdlib',     :git => 'https://github.com/puppetlabs/puppetlabs-stdlib.git'
+
+# External Modules
+mod 'chronograf', :git => 'https://github.com/pckls/puppet-chronograf.git'
+mod 'influxdb',   :git => 'https://github.com/pckls/puppet-influxdb.git'
+mod 'kapacitor',  :git => 'https://github.com/pckls/puppet-kapacitor.git'
+mod 'telegraf',   :git => 'https://github.com/pckls/puppet-telegraf.git'

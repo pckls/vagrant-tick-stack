@@ -1,0 +1,10 @@
+---
+classes:
+    - telegraf
+    - telegraf::confd::agent
+    - telegraf::confd::cpu
+    - telegraf::confd::influxdb
+    - telegraf::confd::mem
+
+telegraf::package_source: web
+telegraf::urls: "[\"http://influxdb1.vagrant.pckls.io:8086\"]"
